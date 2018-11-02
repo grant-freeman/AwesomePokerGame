@@ -14,11 +14,15 @@ namespace AwesomePokerGameSln {
 
     private void btnViewRuleBook_Click(object sender, EventArgs e) {
       if (btnViewRuleBook.Text.StartsWith("View", true, null)) {
-        picRulebook.Visible = true;
+        searchBox.Visible = true;
+        searchLabel.Visible = true;
+        searchBackground.Visible = true;
         btnViewRuleBook.Text = "Close Rule Book";
       }
       else {
-        picRulebook.Visible = false;
+        searchBackground.Visible = false;
+        searchBox.Visible = false;
+        searchLabel.Visible = false;
         btnViewRuleBook.Text = "View Rule Book";
       }
     }
@@ -28,5 +32,5 @@ namespace AwesomePokerGameSln {
       frmPlaygame.Show();
       Hide();
     }
-  }
+    }
 }

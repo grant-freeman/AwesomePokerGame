@@ -294,5 +294,35 @@
   <ItemGroup>
     <None Include="Resources\queen_of_spades2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\four_of_a_kind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one_pair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\royal_flush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straight_flush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three_of_a_kind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two_pair.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
