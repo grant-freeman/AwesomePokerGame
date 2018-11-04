@@ -31,6 +31,7 @@
             this.searchBackground = new System.Windows.Forms.PictureBox();
             this.searchLabel = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.searchBackground)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,6 +125,17 @@
             this.searchBox.TabIndex = 7;
             this.searchBox.Visible = false;
             // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(560, 130);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 37);
+            this.searchButton.TabIndex = 9;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Visible = false;
+            this.searchButton.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // FrmTitle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +144,7 @@
             this.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.title_screen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(950, 560);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchBackground);
@@ -155,9 +168,10 @@
     private System.Windows.Forms.Button btnViewRuleBook;
     private System.Windows.Forms.Button btnQuit;
     private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox searchBackground;
-        private System.Windows.Forms.Label searchLabel;
-        private System.Windows.Forms.TextBox searchBox;
+    private System.Windows.Forms.PictureBox searchBackground;
+    private System.Windows.Forms.Label searchLabel;
+    private System.Windows.Forms.TextBox searchBox;
+    private System.Windows.Forms.Button searchButton;
     }
 }
 
