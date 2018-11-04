@@ -314,6 +314,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Chip_Fiddle.gif" />
+    <None Include="Resources\Chip_Fiddle1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
