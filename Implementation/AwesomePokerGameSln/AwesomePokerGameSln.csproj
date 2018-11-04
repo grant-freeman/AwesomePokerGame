@@ -49,6 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\CardImageHelper.cs" />
+    <Compile Include="Emote_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emote_Window.Designer.cs">
+      <DependentUpon>Emote_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiddle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddle.Designer.cs">
+      <DependentUpon>Fiddle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPlaygame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Emote_Window.resx">
+      <DependentUpon>Emote_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiddle.resx">
+      <DependentUpon>Fiddle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPlaygame.resx">
       <DependentUpon>FrmPlaygame.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,6 +311,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\queen_of_spades2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Chip_Fiddle.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
