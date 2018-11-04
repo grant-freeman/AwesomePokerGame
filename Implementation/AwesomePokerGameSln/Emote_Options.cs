@@ -27,5 +27,11 @@ namespace AwesomePokerGameSln
             DabOnHaters DabOnHaters = new DabOnHaters();
             DabOnHaters.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Flexing Flexing = new Flexing();
+            Flexing.Show();
+        }
     }
 }
