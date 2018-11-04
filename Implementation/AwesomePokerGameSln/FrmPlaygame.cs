@@ -69,7 +69,7 @@ namespace AwesomePokerGameSln {
 
     private void button2_Click(object sender, EventArgs e)
         {
-            Emote_Window Emote_Window = new Emote_Window();
+            Interactions_Window Emote_Window = new Interactions_Window();
             Emote_Window.Show();
         }
     }

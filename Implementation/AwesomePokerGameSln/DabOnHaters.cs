@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace AwesomePokerGameSln
 {
-    public partial class Emote_Window : Form
+    public partial class DabOnHaters : Form
     {
-        public Emote_Window()
+        public DabOnHaters()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Fiddle Fiddle = new Fiddle();
-            Fiddle.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace AwesomePokerGameSln
 {
-    partial class Emote_Window
+    partial class Emote_Options
     {
         /// <summary>
         /// Required designer variable.
@@ -33,22 +33,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(559, 117);
+            this.button1.Location = new System.Drawing.Point(325, 95);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 93);
+            this.button1.Size = new System.Drawing.Size(147, 53);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Fiddle With Chips";
+            this.button1.Text = "Dab on them Haters";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Emote_Window
+            // Emote_Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "Emote_Window";
-            this.Text = "Emote_Window";
+            this.Name = "Emote_Options";
+            this.Text = "Emotes";
             this.ResumeLayout(false);
 
         }
