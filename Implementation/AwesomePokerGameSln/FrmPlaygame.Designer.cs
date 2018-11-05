@@ -52,7 +52,7 @@
             // 
             this.picCard1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCard1.Location = new System.Drawing.Point(101, 225);
-            this.picCard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCard1.Margin = new System.Windows.Forms.Padding(4);
             this.picCard1.Name = "picCard1";
             this.picCard1.Size = new System.Drawing.Size(149, 148);
             this.picCard1.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.picCard3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCard3.Location = new System.Drawing.Point(460, 225);
-            this.picCard3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCard3.Margin = new System.Windows.Forms.Padding(4);
             this.picCard3.Name = "picCard3";
             this.picCard3.Size = new System.Drawing.Size(149, 148);
             this.picCard3.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             this.picCard4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCard4.Location = new System.Drawing.Point(640, 225);
-            this.picCard4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCard4.Margin = new System.Windows.Forms.Padding(4);
             this.picCard4.Name = "picCard4";
             this.picCard4.Size = new System.Drawing.Size(149, 148);
             this.picCard4.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.picCard5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCard5.Location = new System.Drawing.Point(825, 225);
-            this.picCard5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCard5.Margin = new System.Windows.Forms.Padding(4);
             this.picCard5.Name = "picCard5";
             this.picCard5.Size = new System.Drawing.Size(149, 148);
             this.picCard5.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             this.picCard2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCard2.Location = new System.Drawing.Point(281, 225);
-            this.picCard2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCard2.Margin = new System.Windows.Forms.Padding(4);
             this.picCard2.Name = "picCard2";
             this.picCard2.Size = new System.Drawing.Size(149, 148);
             this.picCard2.TabIndex = 4;
@@ -101,7 +101,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(240, 411);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(239, 106);
             this.button1.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(281, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 148);
             this.pictureBox1.TabIndex = 12;
@@ -134,7 +134,7 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(825, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(149, 148);
             this.pictureBox2.TabIndex = 11;
@@ -144,7 +144,7 @@
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(640, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(149, 148);
             this.pictureBox3.TabIndex = 10;
@@ -154,7 +154,7 @@
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(460, 15);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(149, 148);
             this.pictureBox4.TabIndex = 9;
@@ -164,7 +164,7 @@
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(101, 15);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(149, 148);
             this.pictureBox5.TabIndex = 8;
@@ -178,6 +178,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Change Background Color";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmPlaygame
             // 
@@ -198,7 +199,7 @@
             this.Controls.Add(this.picCard4);
             this.Controls.Add(this.picCard3);
             this.Controls.Add(this.picCard1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPlaygame";
             this.Text = "FrmPlaygame";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPlaygame_FormClosed);
