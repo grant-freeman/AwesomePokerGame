@@ -1,10 +1,11 @@
-﻿using AwesomePokerGameSln.Properties;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace AwesomePokerGameSln {
+namespace AwesomePokerGameSln
+{
   public partial class FrmTitle : Form {
+
     public FrmTitle() {
       InitializeComponent();
     }
@@ -31,7 +32,10 @@ namespace AwesomePokerGameSln {
     }
 
     private void btnSearch_Click(object sender, EventArgs e) {
-      Debug.Print(searchBox.Text);
+      if (searchBox.Text.ToLower() == royalFlushImage.Tag.ToString())
+      {
+        Debug.Print("WE OUTCHEAAAAAAAAAAA");
+      }
     }
 
     private void btnNewGame_Click(object sender, EventArgs e) {
