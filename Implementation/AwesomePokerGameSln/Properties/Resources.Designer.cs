@@ -496,15 +496,6 @@ namespace AwesomePokerGameSln.Properties {
         internal static System.Drawing.Bitmap Chip_Fiddle {
             get {
                 object obj = ResourceManager.GetObject("Chip_Fiddle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap flush {
-            get {
-                object obj = ResourceManager.GetObject("flush", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -515,6 +506,17 @@ namespace AwesomePokerGameSln.Properties {
         internal static System.Drawing.Bitmap Flexing {
             get {
                 object obj = ResourceManager.GetObject("Flexing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flush {
+            get {
+                object obj = ResourceManager.GetObject("flush", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
