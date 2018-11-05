@@ -30,7 +30,7 @@ namespace AwesomePokerGameSln {
       }
     }
 
-    private void dealCards() {
+      private void dealCards() {
       deck.shuffleDeck();
       Tuple<int, int>[] cards = new Tuple<int, int>[5];
       int index = 0;
@@ -66,5 +66,12 @@ namespace AwesomePokerGameSln {
     private void button1_Click(object sender, EventArgs e) {
       dealCards();
     }
-  }
+
+    Random random = new Random();
+    private void button2_Click(object sender, EventArgs e)
+    {
+        Color randomColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+        BackColor = Color.Red;
+    }
+    }
 }
