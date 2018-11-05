@@ -49,6 +49,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\CardImageHelper.cs" />
+    <Compile Include="DabOnHaters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DabOnHaters.Designer.cs">
+      <DependentUpon>DabOnHaters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emote_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emote_Options.Designer.cs">
+      <DependentUpon>Emote_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flexing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flexing.Designer.cs">
+      <DependentUpon>Flexing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interactions_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interactions_Window.Designer.cs">
+      <DependentUpon>Interactions_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiddle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddle.Designer.cs">
+      <DependentUpon>Fiddle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPlaygame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +93,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DabOnHaters.resx">
+      <DependentUpon>DabOnHaters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emote_Options.resx">
+      <DependentUpon>Emote_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flexing.resx">
+      <DependentUpon>Flexing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactions_Window.resx">
+      <DependentUpon>Interactions_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiddle.resx">
+      <DependentUpon>Fiddle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPlaygame.resx">
       <DependentUpon>FrmPlaygame.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +340,11 @@
     <None Include="Resources\queen_of_spades2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\BettyDab.gif" />
+    <None Include="Resources\Flexing.gif" />
+    <None Include="Resources\BettyDab1.gif" />
+    <Content Include="Resources\Chip_Fiddle.gif" />
+    <None Include="Resources\Chip_Fiddle1.gif" />
     <None Include="Resources\flush.png" />
   </ItemGroup>
   <ItemGroup>

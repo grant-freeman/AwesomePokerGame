@@ -473,6 +473,16 @@ namespace AwesomePokerGameSln.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BettyDab {
+            get {
+                object obj = ResourceManager.GetObject("BettyDab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_joker {
             get {
                 object obj = ResourceManager.GetObject("black_joker", resourceCulture);
@@ -483,10 +493,28 @@ namespace AwesomePokerGameSln.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chip_Fiddle {
+            get {
+                object obj = ResourceManager.GetObject("Chip_Fiddle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flush {
             get {
                 object obj = ResourceManager.GetObject("flush", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flexing {
+            get {
+                object obj = ResourceManager.GetObject("Flexing", resourceCulture);
             }
         }
         
