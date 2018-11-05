@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -6,8 +7,19 @@ namespace AwesomePokerGameSln
 {
   public partial class FrmTitle : Form {
 
+    public List<PictureBox> rulesList = new List<PictureBox>();
+
     public FrmTitle() {
       InitializeComponent();
+      rulesList.Add(royalFlushImage);
+      rulesList.Add(straightFlushImage);
+      rulesList.Add(fourOfAKindImage);
+      rulesList.Add(fullHouseImage);
+      rulesList.Add(flushImage);
+      rulesList.Add(straightImage);
+      rulesList.Add(threeOfAKindImage);
+      rulesList.Add(twoPairImage);
+      rulesList.Add(onePairImage);
     }
 
     private void btnQuit_Click(object sender, EventArgs e) {
@@ -27,14 +39,28 @@ namespace AwesomePokerGameSln
         searchBox.Visible = false;
         searchLabel.Visible = false;
         searchButton.Visible = false;
-        btnViewRuleBook.Text = "View Rule Book";
+        for (int i = 0; i < rulesList.Count; i++)
+        {
+          rulesList[i].Visible = false;
+        }
+         btnViewRuleBook.Text = "View Rule Book";
       }
     }
 
     private void btnSearch_Click(object sender, EventArgs e) {
-      if (searchBox.Text.ToLower() == royalFlushImage.Tag.ToString())
+      string[] searchTextSplit = searchBox.Text.Split(' ');
+      for (int i = 0; i < rulesList.Count; i++)
       {
-        Debug.Print("WE OUTCHEAAAAAAAAAAA");
+        rulesList[i].Visible = false;
+        for (int j = 0; j < searchTextSplit.Length; j++)
+        {
+          if (rulesList[i].Tag.ToString().Contains(searchTextSplit[j]))
+          {
+            Debug.Print(rulesList[i].Name);
+            rulesList[i].Visible = true;
+            rulesList[i].BringToFront();
+          }
+        }
       }
     }
 
