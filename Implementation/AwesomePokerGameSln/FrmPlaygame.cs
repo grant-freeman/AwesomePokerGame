@@ -67,10 +67,15 @@ namespace AwesomePokerGameSln {
       dealCards();
     }
 
-    private void button2_Click(object sender, EventArgs e)
-        {
-            Interactions_Window Emote_Window = new Interactions_Window();
-            Emote_Window.Show();
-        }
+    private void button2_Click(object sender, EventArgs e){
+        Interactions_Window Emote_Window = new Interactions_Window();
+        Emote_Window.Show();
+    }
+
+    private void cardFlip_Click(object sender, EventArgs e)
+    {
+            PictureBox cardClicked = (PictureBox) sender;
+            cardClicked.SendToBack();
+    }
     }
 }
