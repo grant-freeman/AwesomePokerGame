@@ -140,7 +140,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.card_background;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(76, 12);
             this.pictureBox5.Name = "pictureBox5";
@@ -329,13 +328,13 @@
             this.Controls.Add(this.picCard5);
             this.Controls.Add(this.picCard4);
             this.Controls.Add(this.picCard3);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
             this.Name = "FrmPlaygame";
             this.Text = "FrmPlaygame";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPlaygame_FormClosed);
