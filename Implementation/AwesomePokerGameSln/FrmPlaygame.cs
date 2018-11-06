@@ -74,6 +74,7 @@ namespace AwesomePokerGameSln {
             {
                 dealerCardPic.SendToBack();
             }
+            lblHandType.Visible = false;
         }
 
     private void button2_Click(object sender, EventArgs e){
@@ -96,6 +97,8 @@ namespace AwesomePokerGameSln {
             {
                 dealerCardPic.BringToFront();
             }
+            lblHandType.Visible = true;
+
         }
     }
 }

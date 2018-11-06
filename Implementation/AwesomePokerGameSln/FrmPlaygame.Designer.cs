@@ -88,6 +88,7 @@
             this.lblHandType.Size = new System.Drawing.Size(99, 33);
             this.lblHandType.TabIndex = 7;
             this.lblHandType.Text = "label2";
+            this.lblHandType.Visible = false;
             // 
             // button2
             // 
