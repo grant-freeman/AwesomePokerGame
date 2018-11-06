@@ -39,6 +39,7 @@ namespace AwesomePokerGameSln {
         //CardType card = new CardType(index, inde);
         cards[index++] = card;
         playerCardPic.BackgroundImage = CardImageHelper.cardToBitmap(card);
+        playerCardPic.SendToBack();
       }
       dealerHand = new Hand(cards);
       cards = new CardType[5];

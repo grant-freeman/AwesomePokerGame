@@ -70,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 334);
+            this.button1.Location = new System.Drawing.Point(76, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 86);
             this.button1.TabIndex = 6;
@@ -82,7 +82,7 @@
             // 
             this.lblHandType.AutoSize = true;
             this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHandType.Location = new System.Drawing.Point(428, 345);
+            this.lblHandType.Location = new System.Drawing.Point(358, 355);
             this.lblHandType.Name = "lblHandType";
             this.lblHandType.Size = new System.Drawing.Size(99, 33);
             this.lblHandType.TabIndex = 7;
