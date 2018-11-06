@@ -66,7 +66,15 @@ namespace AwesomePokerGameSln {
 
     private void button1_Click(object sender, EventArgs e) {
       dealCards();
-    }
+            foreach (PictureBox playerCardPic in playerCardPics)
+            {
+                playerCardPic.SendToBack();
+            }
+            foreach (PictureBox dealerCardPic in dealerCardPics)
+            {
+                dealerCardPic.SendToBack();
+            }
+        }
 
     private void button2_Click(object sender, EventArgs e){
         Interactions_Window Emote_Window = new Interactions_Window();
@@ -78,5 +86,16 @@ namespace AwesomePokerGameSln {
             PictureBox cardClicked = (PictureBox) sender;
             cardClicked.SendToBack();
     }
+        private void revealButton_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox playerCardPic in playerCardPics)
+            {
+                playerCardPic.BringToFront();
+            }
+            foreach (PictureBox dealerCardPic in dealerCardPics)
+            {
+                dealerCardPic.BringToFront();
+            }
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -82,7 +83,7 @@
             // 
             this.lblHandType.AutoSize = true;
             this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHandType.Location = new System.Drawing.Point(358, 355);
+            this.lblHandType.Location = new System.Drawing.Point(318, 453);
             this.lblHandType.Name = "lblHandType";
             this.lblHandType.Size = new System.Drawing.Size(99, 33);
             this.lblHandType.TabIndex = 7;
@@ -90,9 +91,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(573, 334);
+            this.button2.Location = new System.Drawing.Point(324, 334);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 86);
+            this.button2.Size = new System.Drawing.Size(179, 86);
             this.button2.TabIndex = 13;
             this.button2.Text = "Game Interactions";
             this.button2.UseVisualStyleBackColor = true;
@@ -307,11 +308,22 @@
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Click += new System.EventHandler(this.cardFlip_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(552, 334);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(179, 86);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Reveal All Cards";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.revealButton_Click);
+            // 
             // FrmPlaygame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 531);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.picCard1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -389,5 +401,6 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Button button3;
     }
 }

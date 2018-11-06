@@ -33,5 +33,10 @@ namespace AwesomePokerGameSln
             Flexing Flexing = new Flexing();
             Flexing.Show();
         }
+
+        private void revealButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
