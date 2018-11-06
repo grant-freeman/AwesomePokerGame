@@ -69,5 +69,9 @@ namespace AwesomePokerGameSln
       frmPlaygame.Show();
       Hide();
     }
+
+    private void btnSendFeedback_Click(object sender, EventArgs e) {
+            System.Diagnostics.Process.Start("https://goo.gl/forms/4qiqBnG5B6yDGFsn2");
+    }
     }
 }
