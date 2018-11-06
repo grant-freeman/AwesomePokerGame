@@ -31,7 +31,7 @@ namespace AwesomePokerGameSln {
       }
     }
 
-      private void dealCards() {
+    private void dealCards() {
       deck.shuffleDeck();
       Tuple<int, int>[] cards = new Tuple<int, int>[5];
       int index = 0;
@@ -62,22 +62,29 @@ namespace AwesomePokerGameSln {
     private void FrmPlaygame_Load(object sender, EventArgs e) {
       deck = new Deck();
       dealCards();
-            BackColor = Color.White;
     }
 
     private void button1_Click(object sender, EventArgs e) {
       dealCards();
     }
 
+    private void button2_Click(object sender, EventArgs e)
+        {
+            Interactions_Window Emote_Window = new Interactions_Window();
+            Emote_Window.Show();
+        }
+    }
+
 
         private Color getRandomColor()
         {
             Random random = new Random();
-            return Color.FromArgb(random.Next(255), random.Next(255), random.Next(255));
+            Color randomColor = Color.FromArgb(random.Next(255), random.Next(255), random.Next(255));
+            return randomColor;
         }
-            private void button2_Click(object sender, EventArgs e)
-    {
-            BackColor = getRandomColor();
-    }
+        private void buttonChangeBackground_Click(object sender, EventArgs e)
+        {
+            BackColor = GetColor();
+        }
     }
 }
