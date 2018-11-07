@@ -29,5 +29,20 @@ namespace AwesomePokerGameSln
             Emote_Options Emote_Options = new Emote_Options();
             Emote_Options.Show();
         }
+
+        private void button_Fold_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You Fold.");
+        }
+
+        private void button_Call_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You Call.");
+        }
+
+        private void button_All_In_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Flexin' on 'em, huh?.");
+        }
     }
 }
