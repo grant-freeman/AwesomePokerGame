@@ -311,6 +311,13 @@
             // 
             // button3
             // 
+            this.button2.Location = new System.Drawing.Point(582, 334);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 86);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Game Interactions";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button3.Location = new System.Drawing.Point(552, 334);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(179, 86);
@@ -318,6 +325,17 @@
             this.button3.Text = "Reveal All Cards";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.revealButton_Click);
+            // 
+            // buttonChangeBackground
+            // 
+            this.buttonChangeBackground.Location = new System.Drawing.Point(330, 415);
+            this.buttonChangeBackground.Name = "buttonChangeBackground";
+            this.buttonChangeBackground.Size = new System.Drawing.Size(145, 23);
+            this.buttonChangeBackground.TabIndex = 14;
+            this.buttonChangeBackground.Text = "Change Background Color";
+            this.buttonChangeBackground.UseVisualStyleBackColor = true;
+            this.buttonChangeBackground.Click += new System.EventHandler(this.buttonChangeBackground_Click);
+
             // 
             // FrmPlaygame
             // 
@@ -374,7 +392,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            this.picCard1 = new System.Windows.Forms.PictureBox();
+            this.picCard3 = new System.Windows.Forms.PictureBox();
+            this.picCard4 = new System.Windows.Forms.PictureBox();
+            this.picCard5 = new System.Windows.Forms.PictureBox();
+            this.picCard2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblHandType = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picCard1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCard3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCard4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCard5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCard2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.SuspendLayout();
     }
 
     #endregion

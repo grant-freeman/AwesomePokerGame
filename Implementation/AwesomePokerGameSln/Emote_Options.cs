@@ -26,12 +26,14 @@ namespace AwesomePokerGameSln
         {
             DabOnHaters DabOnHaters = new DabOnHaters();
             DabOnHaters.Show();
+            DabOnHaters.BackColor = this.BackColor;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Flexing Flexing = new Flexing();
             Flexing.Show();
+            Flexing.BackColor = this.BackColor;
         }
 
         private void revealButton_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace AwesomePokerGameSln {
 
     public FrmPlaygame() {
       InitializeComponent();
+            BackColor = Color.White;
       playerCardPics = new PictureBox[5];
       for (int c = 1; c <= 5; c++) {
         playerCardPics[c - 1] = this.Controls.Find("picCard" + c.ToString(), true)[0] as PictureBox;
@@ -99,6 +100,27 @@ namespace AwesomePokerGameSln {
             }
             lblHandType.Visible = true;
 
+        }
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+        {
+            Interactions_Window Emote_Window = new Interactions_Window();
+            Emote_Window.Show();
+            Emote_Window.BackColor = this.BackColor;
+        }
+    
+
+
+        private Color getRandomColor()
+        {
+            Random random = new Random();
+            Color randomColor = Color.FromArgb(random.Next(255), random.Next(255), random.Next(255));
+            return randomColor;
+        }
+        private void buttonChangeBackground_Click(object sender, EventArgs e)
+        {
+            BackColor = getRandomColor();
         }
     }
 }

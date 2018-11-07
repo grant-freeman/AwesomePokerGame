@@ -21,6 +21,7 @@ namespace AwesomePokerGameSln
         {
             Fiddle Fiddle = new Fiddle();
             Fiddle.Show();
+            Fiddle.BackColor = this.BackColor;
         }
 
 
@@ -28,6 +29,7 @@ namespace AwesomePokerGameSln
         {
             Emote_Options Emote_Options = new Emote_Options();
             Emote_Options.Show();
+            Emote_Options.BackColor = this.BackColor;
         }
 
         private void button_Fold_Click(object sender, EventArgs e)
