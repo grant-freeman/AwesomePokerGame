@@ -72,8 +72,9 @@ namespace AwesomePokerGameSln {
         {
             Interactions_Window Emote_Window = new Interactions_Window();
             Emote_Window.Show();
+            Emote_Window.BackColor = this.BackColor;
         }
-    }
+    
 
 
         private Color getRandomColor()
@@ -84,7 +85,7 @@ namespace AwesomePokerGameSln {
         }
         private void buttonChangeBackground_Click(object sender, EventArgs e)
         {
-            BackColor = GetColor();
+            BackColor = getRandomColor();
         }
     }
 }
