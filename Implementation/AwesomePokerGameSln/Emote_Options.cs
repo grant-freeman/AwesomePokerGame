@@ -35,5 +35,10 @@ namespace AwesomePokerGameSln
             Flexing.Show();
             Flexing.BackColor = this.BackColor;
         }
+
+        private void revealButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

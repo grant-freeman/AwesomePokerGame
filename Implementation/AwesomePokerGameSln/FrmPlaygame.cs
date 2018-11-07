@@ -40,6 +40,7 @@ namespace AwesomePokerGameSln {
         //CardType card = new CardType(index, inde);
         cards[index++] = card;
         playerCardPic.BackgroundImage = CardImageHelper.cardToBitmap(card);
+        playerCardPic.SendToBack();
       }
       dealerHand = new Hand(cards);
       cards = new CardType[5];
@@ -66,6 +67,40 @@ namespace AwesomePokerGameSln {
 
     private void button1_Click(object sender, EventArgs e) {
       dealCards();
+            foreach (PictureBox playerCardPic in playerCardPics)
+            {
+                playerCardPic.SendToBack();
+            }
+            foreach (PictureBox dealerCardPic in dealerCardPics)
+            {
+                dealerCardPic.SendToBack();
+            }
+            lblHandType.Visible = false;
+        }
+
+    private void button2_Click(object sender, EventArgs e){
+        Interactions_Window Emote_Window = new Interactions_Window();
+        Emote_Window.Show();
+    }
+
+    private void cardFlip_Click(object sender, EventArgs e)
+    {
+            PictureBox cardClicked = (PictureBox) sender;
+            cardClicked.SendToBack();
+    }
+        private void revealButton_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox playerCardPic in playerCardPics)
+            {
+                playerCardPic.BringToFront();
+            }
+            foreach (PictureBox dealerCardPic in dealerCardPics)
+            {
+                dealerCardPic.BringToFront();
+            }
+            lblHandType.Visible = true;
+
+        }
     }
 
     private void button2_Click(object sender, EventArgs e)
