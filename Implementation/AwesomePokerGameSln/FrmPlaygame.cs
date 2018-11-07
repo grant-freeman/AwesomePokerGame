@@ -78,11 +78,6 @@ namespace AwesomePokerGameSln {
             lblHandType.Visible = false;
         }
 
-    private void button2_Click(object sender, EventArgs e){
-        Interactions_Window Emote_Window = new Interactions_Window();
-        Emote_Window.Show();
-    }
-
     private void cardFlip_Click(object sender, EventArgs e)
     {
             PictureBox cardClicked = (PictureBox) sender;
@@ -101,7 +96,6 @@ namespace AwesomePokerGameSln {
             lblHandType.Visible = true;
 
         }
-    }
 
     private void button2_Click(object sender, EventArgs e)
         {

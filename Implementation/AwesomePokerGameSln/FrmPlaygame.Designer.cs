@@ -47,6 +47,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.buttonChangeBackground = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,16 +86,16 @@
             this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHandType.Location = new System.Drawing.Point(318, 453);
             this.lblHandType.Name = "lblHandType";
-            this.lblHandType.Size = new System.Drawing.Size(99, 33);
+            this.lblHandType.Size = new System.Drawing.Size(124, 42);
             this.lblHandType.TabIndex = 7;
             this.lblHandType.Text = "label2";
             this.lblHandType.Visible = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(324, 334);
+            this.button2.Location = new System.Drawing.Point(345, 334);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 86);
+            this.button2.Size = new System.Drawing.Size(149, 86);
             this.button2.TabIndex = 13;
             this.button2.Text = "Game Interactions";
             this.button2.UseVisualStyleBackColor = true;
@@ -311,13 +312,6 @@
             // 
             // button3
             // 
-            this.button2.Location = new System.Drawing.Point(582, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 86);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Game Interactions";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button3.Location = new System.Drawing.Point(552, 334);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(179, 86);
@@ -328,20 +322,20 @@
             // 
             // buttonChangeBackground
             // 
-            this.buttonChangeBackground.Location = new System.Drawing.Point(330, 415);
+            this.buttonChangeBackground.Location = new System.Drawing.Point(13, 475);
             this.buttonChangeBackground.Name = "buttonChangeBackground";
-            this.buttonChangeBackground.Size = new System.Drawing.Size(145, 23);
-            this.buttonChangeBackground.TabIndex = 14;
+            this.buttonChangeBackground.Size = new System.Drawing.Size(216, 44);
+            this.buttonChangeBackground.TabIndex = 25;
             this.buttonChangeBackground.Text = "Change Background Color";
             this.buttonChangeBackground.UseVisualStyleBackColor = true;
             this.buttonChangeBackground.Click += new System.EventHandler(this.buttonChangeBackground_Click);
-
             // 
             // FrmPlaygame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 531);
+            this.Controls.Add(this.buttonChangeBackground);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.picCard1);
             this.Controls.Add(this.pictureBox10);
@@ -392,30 +386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.picCard1 = new System.Windows.Forms.PictureBox();
-            this.picCard3 = new System.Windows.Forms.PictureBox();
-            this.picCard4 = new System.Windows.Forms.PictureBox();
-            this.picCard5 = new System.Windows.Forms.PictureBox();
-            this.picCard2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblHandType = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCard3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCard4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCard5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCard2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.SuspendLayout();
+
     }
 
     #endregion
@@ -444,5 +415,6 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonChangeBackground;
     }
 }
